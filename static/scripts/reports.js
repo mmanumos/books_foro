@@ -54,3 +54,35 @@ $('#generate_excel').click(function () {
         });
     }
 });
+
+
+// generate pdf
+$('#generate_pdf').click(function () {
+    //let title = $("#title").val();
+    let categorie_id = $("#categories").val();
+
+    if (categorie_id == "") {
+        alert('Please choose a category');
+    }
+    else {
+        $("#info_gen").show();
+        let filter = {
+            "categorie_id": categorie_id,
+        };
+
+        let url = "http://localhost:5001/api/v1/file_pdf/";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: JSON.stringify(filter),
+            ContentType: 'Application/json',
+            success: function (result) {
+                $("#info_gen").hide();
+                alert('File has been created in root directory of the application with the name: ' + result.File);
+            },
+            error: function (myerror) {
+                console.log(myerror);
+            }
+        });
+    }
+});

@@ -9,3 +9,4 @@ if app_views is not None:
     from api.v1.views.comments import *
     from api.v1.views.users import *
     from api.v1.views.file_excel import *
+    from api.v1.views.file_pdf import *

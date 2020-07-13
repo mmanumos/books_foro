@@ -6,8 +6,9 @@
 *.out
 *.pyc
 *.swp
+*.pdf
+*.xlsx
 .DS_Store
 .vscode/
 __pycache__/
 .gitattributes/
-api/v1/views/__pycache__/
