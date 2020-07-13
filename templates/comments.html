@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Comments</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="{{ url_for('static', filename='img/logointel.png') }}" alt="Logo Intellinext">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/book.png') }}" alt="Book">
+                <a href="/books">Books</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/analysis.png') }}" alt="Report">
+                <a href="/reports"> Reports</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/user-icon.png') }}" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/account">Cuenta</a></li>
+                <li><a href="/login">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="books">
+        <div class="books__item book__comments-heder">
+            <img class="books__item--img" src="{{ url_for('static', filename='img/book-black.png') }}" alt="Book">
+            <div class="books_item--description">
+                <h2 id="book_title"></h2>
+                <p id="publi_date"></p>
+            </div>
+        </div>
+
+        <h1>Comments</h1>
+        <a href="" class="new__comment" id="route_new_comment"> New Comment</a>
+        <br>
+
+        <div class="comments" id="list_comments">
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Políticas de privaciad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/comments.js') }}"></script>
+
+</html>

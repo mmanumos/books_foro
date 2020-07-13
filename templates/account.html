@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <title>My Account</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="{{ url_for('static', filename='img/logointel.png') }}" alt="Logo Intellinext">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/book.png') }}" alt="Book">
+                <a href="/books">Books</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/analysis.png') }}" alt="Report">
+                <a href="/reports"> Reports</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/user-icon.png') }}" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/account">My account</a></li>
+                <li><a href="/login">Log out</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="login">
+        <section class="login__container">
+
+            <h2 tabindex="0" aria-label="Inicia sesión">My Account</h2>
+
+            <input class="input" type="text" id="username" placeholder="Username">
+            <input class="input" type="password" id="password" placeholder="Password">
+            <input class="input" type="text" id="first_name" placeholder="First Name">
+            <input class="input" type="text" id="last_name" placeholder="Last Name">
+            <button class="button" id="edit_user_btn"> Edit</button>
+            <button class="button" id="delete_user_btn"> Delete Account</button>
+
+
+        </section>
+    </section>
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Políticas de privaciad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/account.js') }}"></script>
+
+</html>

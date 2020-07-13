@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Books</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="{{ url_for('static', filename='img/logointel.png') }}" alt="Logo Intellinext">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/book.png') }}" alt="Book">
+                <a href="/books">Books</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/analysis.png') }}" alt="Report">
+                <a href="/reports/"> Reports</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/user-icon.png') }}" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/account">My account</a></li>
+                <li><a href="/login">Log out</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="books">
+        <h1>Reports OpenLibra</h1>
+        <br>
+        <div class="filter__box">
+            <div class="filter__box--select">
+                <label for="cars">Choose a category:</label>
+                <select name="categories" id="categories">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+
+
+        <p class="button info_gen" id="info_gen"> Generando archivo ... </p>
+        <button class="button gen_btn" id="generate_excel"> Generate Excel</button>
+        <button class="button gen_btn" id="generate_pdf"> Generate Pdf</button>
+    </section>
+
+
+
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Políticas de privaciad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/reports.js') }}"></script>
+
+</html>

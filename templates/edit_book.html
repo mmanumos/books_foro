@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Edit Book</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="{{ url_for('static', filename='img/logointel.png') }}" alt="Logo Intellinext">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/book.png') }}" alt="Book">
+                <a href="/books">Books</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/analysis.png') }}" alt="Report">
+                <a href="/reports"> Reports</a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="{{ url_for('static', filename='img/user-icon.png') }}" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="books">
+        <h1>Edit Book</h1>
+
+        <input class="input input_new--book" id="title" type="text" placeholder="Title">
+        <br>
+        <input class="input input_new--book" id="publication_date" type="date" placeholder="Publication date">
+        <br>
+        <button class="button button_new--book" id="edit_book_btn"> Edit</button>
+
+    </section>
+
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Políticas de privaciad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/edit_book.js') }}"></script>
+
+</html>

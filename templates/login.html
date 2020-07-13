@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img tabindex="0" class="header__img" src="{{ url_for('static', filename='img/logointel.png') }}"
+            alt="Logo Platzi video">
+    </header>
+
+    <section class="login">
+        <section class="login__container">
+
+            <h2 tabindex="0" aria-label="Inicia sesión">Login</h2>
+            <input class="input" type="text" id="username" placeholder="Username">
+            <input class="input" type="password" id="password" placeholder="Password">
+            <button class="button" id="login_btn"> Sign In</button>
+            <p class="login__container--register">Don't you have an account? <a href="/new_account">Sign Up</a></p>
+
+        </section>
+    </section>
+
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Políticas de privaciad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/login.js') }}"></script>
+
+</html>

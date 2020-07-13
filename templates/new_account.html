@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <title>New Account</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img tabindex="0" class="header__img" src="{{ url_for('static', filename='img/logointel.png') }}"
+            alt="Logo intel">
+    </header>
+
+    <section class="login">
+        <section class="login__container">
+            <h2 tabindex="0" aria-label="Inicia sesión">New Account</h2>
+            <input aria-label="Correo" class="input" type="text" id="username" placeholder="Username" required>
+            <input aria-label="Contraseña" class="input" type="password" id="password" placeholder="Password" required>
+            <input aria-label="Correo" class="input" type="text" id="first_name" placeholder="First Name" required>
+            <input aria-label="Contraseña" class="input" type="text" id="last_name" placeholder="Last Name" required>
+            <button class="button" id="create_user_btn"> Create</button>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Políticas de privaciad</a>
+        <a href="#">Centro de ayuda</a>
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/new_account.js') }}"></script>
+
+</html>
