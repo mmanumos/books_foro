@@ -8,16 +8,17 @@ Entorno en el que fue desarrollado;
 ## Stack Tecnológico
 
 ### Para frontend se utlizó:
-html5 
-css3
-js 
-jquery(Enlazado externamente)
+* [x] html5 
+* [x] css3
+* [x] js 
+* [x] jquery(Enlazado externamente)
 
 ### Para backend se utilizaron las siguientes librerías
-flask
-sqlalchemy
-flask-cors
-openpyxl
+* [x] flask
+* [x] sqlalchemy
+* [x]flask-cors
+* [x] openpyxl
+* [x] reportalab
 
 ###  Las librerías se instalan de la siguiente forma:
 
