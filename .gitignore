@@ -1,0 +1,13 @@
+*~
+*#
+*.o
+*.ds
+*.exe
+*.out
+*.pyc
+*.swp
+.DS_Store
+.vscode/
+__pycache__/
+.gitattributes/
+api/v1/views/__pycache__/
