@@ -80,6 +80,7 @@ def delete_user(user_id):
 
 @app_views.route('/users/login/', methods=['POST'])
 def login():
+    """ Validation to allow the entry to the application """
     # get data
     data = request.get_json(force=True)
     obj = None
@@ -95,9 +96,3 @@ def login():
     obj = obj.to_dict()
     del obj['password']
     return jsonify(obj)
-
- # md5 for password
-    # password = data['password']
-    # m = hashlib.md5()
-    # m.update(str.encode(password))
-    # data['password'] = m.hexdigest()

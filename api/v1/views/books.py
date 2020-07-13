@@ -1,4 +1,4 @@
-""" API Rest for categories_sub - VIEW """
+""" API Rest for books - VIEW """
 from api.v1.views import app_views
 from flask import jsonify, request, abort
 from models import storage
