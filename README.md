@@ -1,5 +1,7 @@
-# Books Foro
-Entorno en el que fue desarrollado;
+# Books Foro - Intellinext
+Aplicativo de prueba para un reclutador en el que se solicitaba el desarrollo de una aplicación donde se demostrara destreza con la creación, manejo y consumos de API tanto externas como internas con un framework de Python.
+
+## Entorno en el que fue desarrollado;
 
 * [x]  Sistema operativo Ubuntu 20.04 LTS
 * [x]  Motor de bases de datos sqlite 3.31.1
@@ -16,7 +18,7 @@ Entorno en el que fue desarrollado;
 ### Para backend se utilizaron las siguientes librerías
 * [x] flask
 * [x] sqlalchemy
-* [x]flask-cors
+* [x] flask-cors
 * [x] openpyxl
 * [x] reportalab
 
