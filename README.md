@@ -1,4 +1,4 @@
-# Books Foro - Intellinext
+# Books Foro 
 Aplicativo de prueba para un reclutador en el que se solicitaba el desarrollo de una aplicación donde se demostrara destreza con la creación, manejo y consumos de API tanto externas como internas con un framework de Python.
 
 ## Entorno en el que fue desarrollado;
